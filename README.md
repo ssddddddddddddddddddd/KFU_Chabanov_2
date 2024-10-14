@@ -487,3 +487,36 @@ int z = mydiv(x, y);
 Ответ: <code>Функция возвращает результат по ссылке;</code><br>
 <code>В точке вызова будет попытка доступа к не существующей локальной переменной result;</code>
 
+38) Дана функция на языке С++. Выберите всё варианты, которые можно добавить в код в качестве объявления этой функции:
+```cpp
+void print(short a, short b, std::string sep){
+    std::cout << a << sep << b;
+}
+```
+Ответ:
+```cpp
+auto print(short a, short b, std::string sep) -> void;
+```
+```cpp
+void print(short, short, std::string);
+```
+```cpp
+void print(short b, short a, std::string stop);
+```
+```cpp
+void print(short a, short b, std::string sep);
+```
+
+39) Дана функция на языке С++. Выберите всё варианты, которые можно добавить в код в качестве объявления этой функции:
+```cpp
+// 1
+#include <iostream>
+// 2
+int main(){
+    // 3
+    std::cout << "Don't blink" << std::endl;
+    // 4
+}
+// 5
+```
+Ответ:<code>1 2 5</code><br>
