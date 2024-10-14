@@ -307,6 +307,7 @@ func main() {
     fmt.Println(sum(2, 2))
     // 5
 }
+// 6
 ```
 Ответ: <code>3 6</code>
 
