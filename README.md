@@ -399,4 +399,74 @@ void swap(int a, int b){
 Ответ: <code>func div(a, b float64) (float64, error)</code><br>
 <code>func div(a, b float64) (res float64, err error)</code>
 
--
+- Дана функция на языке С++. Выберите всё варианты, которые являются определением этой функции:
+```cpp
+void print(short a, short b, std::string sep){
+    std::cout << a << sep << b;
+}
+```
+Ответ:
+```cpp
+void print(short a, short b, std::string sep){
+    std::cout << a << sep << b;
+}
+```
+
+- Дана функция на языке С++. Выберите все верные утверждения:
+```cpp
+int* mydiv(int a, int b){
+    int result = a % b;
+    return &result;
+}
+```
+При условии, что функция вызывается так:
+```cpp
+int x = 9, y = 2;
+int* z = mydiv(x, y);
+```
+Ответ: <code>В точке вызова будет получен адрес по которому лежала переменной result во время работы функции mydiv;</code><br>
+<code>Функция возвращает результат по указателю;</code>
+
+- Язык С++. Выберите прототипы функций, для которых обязательно наличие оператора return в теле:<br>
+
+Ответ:
+```cpp
+std::string& strip(std::string& src);
+```
+```cpp
+double next();
+```
+```cpp
+int sum(int a, int b);
+```
+
+
+- Дана функция на языке С++. Выберите все верные утверждения:
+```cpp
+int min(int* a, int* b){
+    return *a < *b ? *a : *b;
+}
+```
+При условии, что функция вызывается так:
+```cpp
+int x = 10, y = 0;
+min(&x, &y);
+```
+Ответ: <code>Параметры функции получают адреса, по которым расположены переменные;</code><br>
+<codeФункция принимает аргументы по указателю;</code>
+
+- Код на языке Go. Выберите все позиции (отмеченные комментарием) в которых можно определить функцию sum.
+```go
+// 1
+package main
+// 2
+import "fmt"
+// 3
+func main() {
+    // 4
+    fmt.Println("Hello World")
+    // 5
+}
+// 6
+```
+Ответ: <code>6 3</code><br>
